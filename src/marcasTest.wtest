@@ -1,0 +1,12 @@
+import Marcas.*
+
+describe "tests de marcas" {
+
+	const hobfrau = new Roja(contenidoLupulo = 5, pais = alemania, graduacionReglamentariaNegra = 5)
+	
+	const jarra1 = new Jarra(capacidad = 0.5, contenido = hobfrau)
+	
+	test "contenido de alcohol"{
+    	assert.equals(jarra1.cantidadDeAlcohol(), 0.03125)
+	}
+}
